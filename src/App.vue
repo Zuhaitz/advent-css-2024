@@ -7,7 +7,7 @@
   <header>
     <div class="page-name">
       <img :src="logo" alt="logo" />
-      <p>Advent CSS 2024</p>
+      <p>Advent <span class="colored-text">CSS</span> 2024</p>
     </div>
     <nav>
       <RouterLink to="/" class="nav-link">Home</RouterLink>
@@ -21,54 +21,54 @@
 <style lang="scss" scoped>
   $accent-color: #30aa82;
 
-  header {
-    position: relative;
-    // padding: 15px;
-
-    border-bottom: 2px solid $accent-color;
-
-    // background-color: aqua;
-  }
-
-  .page-name {
-    position: absolute;
-    left: 20px;
-    top: 0;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    height: 100%;
-
-    img {
-      width: 30px;
+  @layer base {
+    header {
+      position: relative;
+      border-bottom: 2px solid $accent-color;
     }
 
-    p {
-      font-size: 1.5rem;
+    nav {
+      display: flex;
+      justify-content: center;
+
+      width: 100%;
     }
   }
 
-  nav {
-    display: flex;
-    justify-content: center;
+  @layer components {
+    .page-name {
+      position: absolute;
+      left: 20px;
+      top: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
 
-    width: 100%;
-  }
+      height: 100%;
 
-  .nav-link {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    height: 50px;
-    padding: 10px 20px;
+      img {
+        width: 30px;
+      }
 
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-decoration: none;
+      p {
+        font-size: 1.5rem;
+      }
+    }
 
-    &:hover {
-      background-color: $accent-color;
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      height: 50px;
+      padding: 10px 20px;
+
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $accent-color;
+      }
     }
   }
 </style>
