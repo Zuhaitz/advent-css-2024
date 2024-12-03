@@ -23,11 +23,17 @@
   @layer components {
     .container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(568px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 1rem;
 
       height: 100%;
       padding: 30px;
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   }
 </style>
