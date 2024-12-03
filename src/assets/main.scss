@@ -26,4 +26,9 @@
     color: white;
     background-color: #1e1e1e;
   }
+
+  body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
