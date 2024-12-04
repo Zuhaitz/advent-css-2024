@@ -9,6 +9,10 @@
       <img :src="galleryPhoto" alt="Challenge 1" />
       <p>1 - Gallery</p>
     </RouterLink>
+    <RouterLink to="/challenge2" class="project-link">
+      <img :src="galleryPhoto" alt="Challenge 1" />
+      <p>2 - CSS Only Toggle</p>
+    </RouterLink>
   </div>
 </template>
 
@@ -27,7 +31,7 @@
     .project-link {
       position: relative;
       // max-width: 240px;
-      // height: 150px;
+      height: 240px;
 
       overflow: hidden;
       border-radius: 0.5rem;
@@ -36,6 +40,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        aspect-ratio: 1 / 1;
         transition: all 0.2s ease-in-out;
       }
 
@@ -60,9 +65,17 @@
     }
 
     @media (min-width: 1024px) {
+      .container {
+        display: flex;
+      }
+
       .project-link {
-        max-width: 300px;
+        max-width: 320px;
         height: 180px;
+
+        img {
+          aspect-ratio: 16 / 9;
+        }
       }
     }
   }

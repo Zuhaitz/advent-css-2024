@@ -47,10 +47,12 @@
       height: 100%;
 
       img {
+        display: none;
         width: 30px;
       }
 
       p {
+        display: none;
         font-size: 1.5rem;
       }
     }
@@ -68,6 +70,18 @@
 
       &:hover {
         background-color: $accent-color;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .page-name > img {
+        display: block;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .page-name > p {
+        display: block;
       }
     }
   }
