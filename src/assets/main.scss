@@ -1,4 +1,4 @@
-@layer color, base, components, utils;
+@layer base, components, utils;
 
 @layer base {
   *,
@@ -33,9 +33,25 @@
   }
 }
 
+@layer components {
+  .page_title {
+    width: fit-content;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    border-bottom: 1px solid #30aa82;
+  }
+}
+
 @layer utils {
   .colored-text {
     font-weight: bold;
     color: #30aa82;
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

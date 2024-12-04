@@ -25,6 +25,7 @@
     header {
       position: relative;
       border-bottom: 2px solid $accent-color;
+      margin-bottom: 1rem;
     }
 
     nav {
@@ -54,6 +55,10 @@
       p {
         display: none;
         font-size: 1.5rem;
+
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
       }
     }
 
@@ -67,6 +72,10 @@
       font-weight: bold;
       font-size: 1.2rem;
       text-decoration: none;
+
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
 
       &:hover {
         background-color: $accent-color;

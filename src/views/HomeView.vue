@@ -1,6 +1,7 @@
 <script setup>
   import { RouterLink } from "vue-router";
   import galleryPhoto from "../assets/images/challenge1/photo1.jpg";
+  import checkboxPhoto from "../assets/images/challenge2/challenge2-screen.jpg";
 </script>
 
 <template>
@@ -10,7 +11,7 @@
       <p>1 - Gallery</p>
     </RouterLink>
     <RouterLink to="/challenge2" class="project-link">
-      <img :src="galleryPhoto" alt="Challenge 1" />
+      <img :src="checkboxPhoto" alt="Challenge 2" />
       <p>2 - CSS Only Toggle</p>
     </RouterLink>
   </div>
