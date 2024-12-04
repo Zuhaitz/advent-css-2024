@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div class="container">
+  <div class="page">
     <RouterLink to="/challenge1" class="project-link">
       <img :src="galleryPhoto" alt="Challenge 1" />
       <p>1 - Gallery</p>
@@ -14,12 +14,16 @@
       <img :src="checkboxPhoto" alt="Challenge 2" />
       <p>2 - CSS Only Toggle</p>
     </RouterLink>
+    <RouterLink to="/challenge3" class="project-link">
+      <img :src="galleryPhoto" alt="Challenge 3" />
+      <p>3 - CSS Only Tooltip</p>
+    </RouterLink>
   </div>
 </template>
 
 <style lang="scss" scoped>
   @layer components {
-    .container {
+    .page {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       align-items: center;
@@ -66,7 +70,7 @@
     }
 
     @media (min-width: 1024px) {
-      .container {
+      .page {
         display: flex;
       }
 
