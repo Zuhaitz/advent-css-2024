@@ -19,6 +19,10 @@
       <img :src="tooltipPhoto" alt="Challenge 3" />
       <p>3 - CSS Only Tooltip</p>
     </RouterLink>
+    <RouterLink to="/challenge4" class="project-link">
+      <img :src="tooltipPhoto" alt="Challenge 4" />
+      <p>4 - Header Styling</p>
+    </RouterLink>
   </div>
 </template>
 
