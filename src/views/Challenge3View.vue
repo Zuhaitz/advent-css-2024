@@ -28,6 +28,7 @@
       font-size: $text-size;
       text-decoration: underline;
       text-decoration-style: dotted;
+      cursor: default;
 
       span {
         display: none;
