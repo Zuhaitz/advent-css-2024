@@ -1,6 +1,6 @@
 <script setup>
   import PageLink from "@/components/PageLink.vue";
-  import { pageLinks } from "@/utils/pageInfo";
+  import { pageLinks } from "@/utils/pagesInfo";
 </script>
 
 <template>
