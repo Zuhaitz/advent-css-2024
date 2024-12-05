@@ -1,12 +1,15 @@
 {
   "name": "advent-css-2024",
+  "homepage": "https://zuhaitz.github.io/advent-css-2024/",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "vue": "^3.5.13",
