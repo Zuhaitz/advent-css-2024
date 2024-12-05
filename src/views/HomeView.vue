@@ -5,13 +5,7 @@
 
 <template>
   <div class="page">
-    <PageLink
-      v-for="page in pageLinks"
-      :key="page.id"
-      :number="page.number"
-      :title="page.title"
-      :thumbnail="page.thumbnail"
-    />
+    <PageLink v-for="page in pageLinks" :key="page.id" v-bind="page" />
   </div>
 </template>
 

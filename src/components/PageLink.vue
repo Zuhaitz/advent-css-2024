@@ -2,6 +2,7 @@
   import { RouterLink } from "vue-router";
 
   defineProps({
+    path: String,
     number: Number,
     title: String,
     thumbnail: String,
@@ -9,7 +10,7 @@
 </script>
 
 <template>
-  <RouterLink :to="'/challenge' + number" class="project-link">
+  <RouterLink :to="path" class="project-link">
     <img :src="thumbnail" :alt="'Challenge ' + number" />
     <p>{{ title }}</p>
   </RouterLink>
