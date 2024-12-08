@@ -43,10 +43,23 @@
 @layer components {
   .page_title {
     width: fit-content;
-    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    margin: 1rem;
     margin-bottom: 2rem;
-    text-decoration: underline;
-    border-bottom: 1px solid #30aa82;
+
+    font-size: 2rem;
+    text-wrap: balance;
+    text-align: center;
+
+    border-bottom: 2px solid #30aa82;
+  }
+
+  @media (min-width: 768px) {
+    .page_title {
+      text-decoration: underline;
+      border-bottom: 1px solid #30aa82;
+      padding-bottom: 0;
+    }
   }
 }
 

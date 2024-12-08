@@ -2,6 +2,7 @@ import galleryThumb from "../assets/images/challenge1/photo1.jpg";
 import checkboxThumb from "../assets/images/challenge2/challenge2-screen.jpg";
 import tooltipThumb from "../assets/images/challenge3/challenge3-screen.jpg";
 import headerThumb from "../assets/images/challenge4/challenge4-screen.jpg";
+import footerThumb from "../assets/images/challenge5/challenge5-screen.jpg";
 
 export const pageLinks = [
   {
@@ -27,5 +28,11 @@ export const pageLinks = [
     number: 4,
     title: "4 - Header Styling",
     thumbnail: headerThumb,
+  },
+  {
+    path: "/challenge5",
+    number: 5,
+    title: "5 - Scroll up to Reveal the Footer",
+    thumbnail: footerThumb,
   },
 ];
