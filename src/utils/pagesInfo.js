@@ -3,6 +3,7 @@ import checkboxThumb from "../assets/images/challenge2/challenge2-screen.jpg";
 import tooltipThumb from "../assets/images/challenge3/challenge3-screen.jpg";
 import headerThumb from "../assets/images/challenge4/challenge4-screen.jpg";
 import footerThumb from "../assets/images/challenge5/challenge5-screen.jpg";
+import scrollThumb from "../assets/images/challenge6/challenge6-screen.jpg";
 
 export const pageLinks = [
   {
@@ -34,5 +35,11 @@ export const pageLinks = [
     number: 5,
     title: "5 - Scroll up to Reveal the Footer",
     thumbnail: footerThumb,
+  },
+  {
+    path: "/challenge6",
+    number: 6,
+    title: "6 - Scroll Indicator",
+    thumbnail: scrollThumb,
   },
 ];
