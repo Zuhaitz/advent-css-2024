@@ -1,1 +1,0 @@
-import{_ as s,c as n,a as t,d as e,F as o,o as c,N as r}from"./index-Bv7seGPA.js";const l={__name:"Challenge4View",setup(_){return(d,a)=>(c(),n(o,null,[t(r),a[0]||(a[0]=e("section",{class:"container"},[e("h1",{class:"heading"},[e("span",null,"Heading")])],-1))],64))}},i=s(l,[["__scopeId","data-v-cd365586"]]);export{i as default};
