@@ -4,6 +4,7 @@ import tooltipThumb from "../assets/images/challenge3/challenge3-screen.jpg";
 import headerThumb from "../assets/images/challenge4/challenge4-screen.jpg";
 import footerThumb from "../assets/images/challenge5/challenge5-screen.jpg";
 import scrollThumb from "../assets/images/challenge6/challenge6-screen.jpg";
+import labelThumb from "../assets/images/challenge7/challenge7-screen.jpg";
 
 export const pageLinks = [
   {
@@ -46,6 +47,6 @@ export const pageLinks = [
     path: "/challenge7",
     number: 7,
     title: "7 - Animated Label",
-    thumbnail: scrollThumb,
+    thumbnail: labelThumb,
   },
 ];
