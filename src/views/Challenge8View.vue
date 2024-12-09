@@ -31,7 +31,7 @@
 
       animation: appear auto linear;
       animation-timeline: scroll(root block);
-      animation-range: entry 0% cover 5%;
+      animation-range: entry 0% cover 40%;
       animation-fill-mode: both;
     }
 

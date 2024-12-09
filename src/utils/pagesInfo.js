@@ -5,6 +5,7 @@ import headerThumb from "../assets/images/challenge4/challenge4-screen.jpg";
 import footerThumb from "../assets/images/challenge5/challenge5-screen.jpg";
 import scrollThumb from "../assets/images/challenge6/challenge6-screen.jpg";
 import labelThumb from "../assets/images/challenge7/challenge7-screen.jpg";
+import scrollRevealThumb from "../assets/images/challenge8/challenge8-screen.jpg";
 
 export const pageLinks = [
   {
@@ -53,6 +54,6 @@ export const pageLinks = [
     path: "/challenge8",
     number: 8,
     title: "8 - Scroll into View, Top Nav",
-    thumbnail: labelThumb,
+    thumbnail: scrollRevealThumb,
   },
 ];
