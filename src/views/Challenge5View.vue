@@ -1,4 +1,10 @@
+<script setup>
+  import Navbar from "@/components/Navbar.vue";
+</script>
+
 <template>
+  <Navbar />
+
   <section class="container">
     <h1 class="page_title">Scroll up to Reveal the Footer</h1>
     <p>

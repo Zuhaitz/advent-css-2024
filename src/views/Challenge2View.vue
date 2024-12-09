@@ -1,8 +1,11 @@
 <script setup>
+  import Navbar from "@/components/Navbar.vue";
   import checkboxIcon from "../assets/images/challenge2/check.svg";
 </script>
 
 <template>
+  <Navbar />
+
   <section class="container">
     <h1 class="page_title">2 - CSS Only Toggle</h1>
     <label for="toggle" class="toggle">

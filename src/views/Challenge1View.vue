@@ -1,4 +1,5 @@
 <script setup>
+  import Navbar from "@/components/Navbar.vue";
   import photo1 from "../assets/images/challenge1/photo1.jpg";
   import photo2 from "../assets/images/challenge1/photo2.jpg";
   import photo3 from "../assets/images/challenge1/photo3.jpg";
@@ -9,6 +10,8 @@
 </script>
 
 <template>
+  <Navbar />
+
   <section class="container">
     <PhotoGallery :photos="[photo1, photo2, photo3, photo4, photo5, photo5]" />
     <PhotoGallery :photos="[photo1, photo2, photo3, photo4, photo5]" />

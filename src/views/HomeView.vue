@@ -1,9 +1,12 @@
 <script setup>
+  import Navbar from "@/components/Navbar.vue";
   import PageLink from "@/components/PageLink.vue";
   import { pageLinks } from "@/utils/pagesInfo";
 </script>
 
 <template>
+  <Navbar />
+
   <div class="page">
     <PageLink v-for="page in pageLinks" :key="page.id" v-bind="page" />
   </div>

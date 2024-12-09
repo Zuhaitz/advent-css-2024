@@ -1,4 +1,10 @@
+<script setup>
+  import Navbar from "@/components/Navbar.vue";
+</script>
+
 <template>
+  <Navbar />
+
   <section class="container">
     <h1 class="page_title">3 - CSS Only Tooltip</h1>
     <div class="box flex-center">

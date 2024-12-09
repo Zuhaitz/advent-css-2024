@@ -1,8 +1,11 @@
 <script setup>
+  import Navbar from "@/components/Navbar.vue";
   import arrowDown from "../assets/images/challenge8/arrow-down.svg";
 </script>
 
 <template>
+  <Navbar />
+
   <section class="container">
     <div>
       <img :src="arrowDown" alt="arrow down" />
