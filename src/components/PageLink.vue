@@ -58,6 +58,7 @@
       .project-link {
         max-width: 320px;
         height: 180px;
+        flex: 1 1 20%;
 
         img {
           aspect-ratio: 16 / 9;

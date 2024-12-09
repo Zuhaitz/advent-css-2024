@@ -42,4 +42,10 @@ export const pageLinks = [
     title: "6 - Scroll Indicator",
     thumbnail: scrollThumb,
   },
+  {
+    path: "/challenge7",
+    number: 7,
+    title: "7 - Animated Label",
+    thumbnail: scrollThumb,
+  },
 ];
