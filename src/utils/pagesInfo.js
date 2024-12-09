@@ -49,4 +49,10 @@ export const pageLinks = [
     title: "7 - Animated Label",
     thumbnail: labelThumb,
   },
+  {
+    path: "/challenge8",
+    number: 8,
+    title: "8 - Scroll into View, Top Nav",
+    thumbnail: labelThumb,
+  },
 ];
