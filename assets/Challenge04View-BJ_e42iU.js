@@ -1,0 +1,1 @@
+import{_ as s,c as n,b as a,o as t}from"./index-yKJG8vIS.js";const o={class:"container"},c={__name:"Challenge04View",setup(_){return(l,e)=>(t(),n("section",o,e[0]||(e[0]=[a("h1",{class:"heading"},[a("span",null,"Heading")],-1)])))}},i=s(c,[["__scopeId","data-v-2cb41a36"]]);export{i as default};
