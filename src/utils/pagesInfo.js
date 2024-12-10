@@ -6,6 +6,7 @@ import footerThumb from "../assets/images/challenge05/challenge5-screen.jpg";
 import scrollThumb from "../assets/images/challenge06/challenge6-screen.jpg";
 import labelThumb from "../assets/images/challenge07/challenge7-screen.jpg";
 import scrollRevealThumb from "../assets/images/challenge08/challenge8-screen.jpg";
+import gradientThumb from "../assets/images/challenge09/challenge9-screen.jpg";
 
 export const pageLinks = [
   {
@@ -55,5 +56,11 @@ export const pageLinks = [
     number: 8,
     title: "8 - Scroll into View, Top Nav",
     thumbnail: scrollRevealThumb,
+  },
+  {
+    path: "/challenge9",
+    number: 9,
+    title: "9 - Button with a Gradient Border",
+    thumbnail: gradientThumb,
   },
 ];
