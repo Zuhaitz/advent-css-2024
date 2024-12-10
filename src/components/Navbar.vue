@@ -1,23 +1,41 @@
 <script setup>
   import { RouterLink } from "vue-router";
   import logo from "../assets/logo.svg";
+  import leftArrowIcon from "../assets/icons/arrow-small-left.svg";
+
+  defineProps({
+    previous: { type: Object, default: null },
+    next: { type: Object, default: null },
+  });
 </script>
 
 <template>
   <header>
-    <div class="page-name">
+    <div v-if="!previous" class="page-name">
       <img :src="logo" alt="logo" />
       <p>Advent <span class="colored-text">CSS</span> 2024</p>
     </div>
+    <RouterLink v-else :to="previous.path" class="left-link">
+      <img :src="leftArrowIcon" alt="left icon" />
+      <p>{{ previous.title }}</p>
+    </RouterLink>
+
     <nav>
       <RouterLink to="/" class="nav-link">Home</RouterLink>
       <RouterLink to="/about" class="nav-link">About</RouterLink>
     </nav>
+
+    <RouterLink v-if="next" :to="next.path" class="right-link">
+      <p>{{ next.title }}</p>
+      <img :src="leftArrowIcon" alt="left icon" />
+    </RouterLink>
   </header>
 </template>
 
 <style lang="scss" scoped>
   $accent-color: #30aa82;
+  $background-color: #1e1e1e;
+  $background-color-focus: #363636;
 
   @layer base {
     header {
@@ -60,6 +78,53 @@
       }
     }
 
+    .left-link,
+    .right-link {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 5px;
+      height: fit-content;
+
+      text-decoration: none;
+
+      img {
+        width: 30px;
+      }
+
+      p {
+        display: none;
+        font-size: 1.5rem;
+
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+      }
+
+      &:hover {
+        border-radius: 100%;
+        background: $background-color-focus;
+      }
+    }
+
+    .right-link {
+      position: absolute;
+      left: auto;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      img {
+        transform: scaleX(-1);
+      }
+    }
+
     .nav-link {
       display: flex;
       align-items: center;
@@ -89,6 +154,30 @@
     @media (min-width: 1024px) {
       .page-name > p {
         display: block;
+      }
+
+      .left-link {
+        padding-right: 10px;
+
+        p {
+          display: block;
+        }
+
+        &:hover {
+          border-radius: 0.5rem;
+        }
+      }
+
+      .right-link {
+        padding-left: 10px;
+
+        p {
+          display: block;
+        }
+
+        &:hover {
+          border-radius: 0.5rem;
+        }
       }
     }
   }

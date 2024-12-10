@@ -10,7 +10,7 @@
 </script>
 
 <template>
-  <Navbar />
+  <Navbar :next="{ path: '/challenge2', title: '2 - CSS Only Toggle' }" />
 
   <section class="container">
     <PhotoGallery :photos="[photo1, photo2, photo3, photo4, photo5, photo5]" />
