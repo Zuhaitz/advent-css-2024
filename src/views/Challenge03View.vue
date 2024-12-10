@@ -3,11 +3,6 @@
 </script>
 
 <template>
-  <Navbar
-    :previous="{ path: '/challenge2', title: '2 - CSS Only Toggle' }"
-    :next="{ path: '/challenge4', title: '4 - Header Styling' }"
-  />
-
   <section class="container">
     <h1 class="page_title">3 - CSS Only Tooltip</h1>
     <div class="box flex-center">

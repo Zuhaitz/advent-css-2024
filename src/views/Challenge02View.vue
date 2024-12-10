@@ -4,11 +4,6 @@
 </script>
 
 <template>
-  <Navbar
-    :previous="{ path: '/challenge1', title: '1 - Gallery' }"
-    :next="{ path: '/challenge3', title: '3 - CSS Only Tooltip' }"
-  />
-
   <section class="container">
     <h1 class="page_title">2 - CSS Only Toggle</h1>
     <label for="toggle" class="toggle">

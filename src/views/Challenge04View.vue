@@ -3,8 +3,6 @@
 </script>
 
 <template>
-  <Navbar />
-
   <section class="container">
     <h1 class="heading"><span>Heading</span></h1>
   </section>

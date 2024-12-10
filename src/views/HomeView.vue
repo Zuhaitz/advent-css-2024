@@ -5,8 +5,6 @@
 </script>
 
 <template>
-  <Navbar />
-
   <div class="page">
     <PageLink v-for="page in pageLinks" :key="page.id" v-bind="page" />
   </div>

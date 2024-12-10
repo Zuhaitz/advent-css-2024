@@ -3,8 +3,6 @@
 </script>
 
 <template>
-  <Navbar />
-
   <section class="container">
     <h1 class="page_title">About page</h1>
     <p>

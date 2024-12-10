@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
 
 const router = createRouter({
   scrollBehavior() {
@@ -9,33 +10,75 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: HomeView,
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: () => import("../views/AboutView.vue"),
-    },
-    {
-      path: "/challenge1",
-      name: "challenge1",
-      component: () => import("../views/Challenge01View.vue"),
-    },
-    {
-      path: "/challenge2",
-      name: "challenge2",
-      component: () => import("../views/Challenge02View.vue"),
-    },
-    {
-      path: "/challenge3",
-      name: "challenge3",
-      component: () => import("../views/Challenge03View.vue"),
-    },
-    {
-      path: "/challenge4",
-      name: "challenge4",
-      component: () => import("../views/Challenge04View.vue"),
+      name: "default",
+      component: DefaultLayout,
+      redirect: "/",
+      children: [
+        {
+          path: "/",
+          name: "home",
+          component: HomeView,
+          meta: {
+            enterClass: "animate__animated animate__fadeInLeft",
+            leaveClass: "animate__animated animate__fadeOutRight",
+          },
+        },
+        {
+          path: "/about",
+          name: "about",
+          component: () => import("../views/AboutView.vue"),
+          meta: {
+            enterClass: "animate__animated animate__fadeInRight",
+            leaveClass: "animate__animated animate__fadeOutLeft",
+          },
+        },
+        {
+          path: "/challenge1",
+          name: "challenge1",
+          component: () => import("../views/Challenge01View.vue"),
+          meta: {
+            next: { path: "/challenge2", title: "2 - CSS Only Toggle" },
+            enterClass: "animate__animated animate__zoomIn",
+            leaveClass: "animate__animated animate__zoomOut",
+          },
+        },
+        {
+          path: "/challenge2",
+          name: "challenge2",
+          component: () => import("../views/Challenge02View.vue"),
+          meta: {
+            previous: { path: "/challenge1", title: "1 - Gallery" },
+            next: { path: "/challenge3", title: "3 - CSS Only Tooltip" },
+            enterClass: "animate__animated animate__zoomIn",
+            leaveClass: "animate__animated animate__zoomOut",
+          },
+        },
+        {
+          path: "/challenge3",
+          name: "challenge3",
+          component: () => import("../views/Challenge03View.vue"),
+          meta: {
+            previous: { path: "/challenge2", title: "2 - CSS Only Toggle" },
+            next: { path: "/challenge4", title: "4 - Header Styling" },
+            enterClass: "animate__animated animate__zoomIn",
+            leaveClass: "animate__animated animate__zoomOut",
+          },
+        },
+        {
+          path: "/challenge4",
+          name: "challenge4",
+          component: () => import("../views/Challenge04View.vue"),
+          meta: {
+            previous: { path: "/challenge3", title: "3 - CSS Only Tooltip" },
+            next: {
+              path: "/challenge5",
+              title: "5 - Scroll up to Reveal the Footer",
+            },
+            enterClass: "animate__animated animate__zoomIn",
+            leaveClass: "animate__animated animate__zoomOut",
+          },
+        },
+      ],
     },
     {
       path: "/challenge5",
