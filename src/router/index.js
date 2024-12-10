@@ -20,42 +20,42 @@ const router = createRouter({
     {
       path: "/challenge1",
       name: "challenge1",
-      component: () => import("../views/Challenge1View.vue"),
+      component: () => import("../views/Challenge01View.vue"),
     },
     {
       path: "/challenge2",
       name: "challenge2",
-      component: () => import("../views/Challenge2View.vue"),
+      component: () => import("../views/Challenge02View.vue"),
     },
     {
       path: "/challenge3",
       name: "challenge3",
-      component: () => import("../views/Challenge3View.vue"),
+      component: () => import("../views/Challenge03View.vue"),
     },
     {
       path: "/challenge4",
       name: "challenge4",
-      component: () => import("../views/Challenge4View.vue"),
+      component: () => import("../views/Challenge04View.vue"),
     },
     {
       path: "/challenge5",
       name: "challenge5",
-      component: () => import("../views/Challenge5View.vue"),
+      component: () => import("../views/Challenge05View.vue"),
     },
     {
       path: "/challenge6",
       name: "challenge6",
-      component: () => import("../views/Challenge6View.vue"),
+      component: () => import("../views/Challenge06View.vue"),
     },
     {
       path: "/challenge7",
       name: "challenge7",
-      component: () => import("../views/Challenge7View.vue"),
+      component: () => import("../views/Challenge07View.vue"),
     },
     {
       path: "/challenge8",
       name: "challenge8",
-      component: () => import("../views/Challenge8View.vue"),
+      component: () => import("../views/Challenge08View.vue"),
     },
   ],
 });

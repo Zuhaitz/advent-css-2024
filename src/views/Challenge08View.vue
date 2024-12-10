@@ -1,6 +1,6 @@
 <script setup>
   import Navbar from "@/components/Navbar.vue";
-  import arrowDown from "../assets/images/challenge8/arrow-down.svg";
+  import arrowDown from "../assets/images/challenge08/arrow-down.svg";
 </script>
 
 <template>

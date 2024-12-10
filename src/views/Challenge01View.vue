@@ -1,10 +1,10 @@
 <script setup>
   import Navbar from "@/components/Navbar.vue";
-  import photo1 from "../assets/images/challenge1/photo1.jpg";
-  import photo2 from "../assets/images/challenge1/photo2.jpg";
-  import photo3 from "../assets/images/challenge1/photo3.jpg";
-  import photo4 from "../assets/images/challenge1/photo4.jpg";
-  import photo5 from "../assets/images/challenge1/photo5.jpg";
+  import photo1 from "../assets/images/challenge01/photo1.jpg";
+  import photo2 from "../assets/images/challenge01/photo2.jpg";
+  import photo3 from "../assets/images/challenge01/photo3.jpg";
+  import photo4 from "../assets/images/challenge01/photo4.jpg";
+  import photo5 from "../assets/images/challenge01/photo5.jpg";
 
   import PhotoGallery from "../components/PhotoGallery.vue";
 </script>

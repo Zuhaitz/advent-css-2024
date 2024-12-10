@@ -1,11 +1,11 @@
-import galleryThumb from "../assets/images/challenge1/photo1.jpg";
-import checkboxThumb from "../assets/images/challenge2/challenge2-screen.jpg";
-import tooltipThumb from "../assets/images/challenge3/challenge3-screen.jpg";
-import headerThumb from "../assets/images/challenge4/challenge4-screen.jpg";
-import footerThumb from "../assets/images/challenge5/challenge5-screen.jpg";
-import scrollThumb from "../assets/images/challenge6/challenge6-screen.jpg";
-import labelThumb from "../assets/images/challenge7/challenge7-screen.jpg";
-import scrollRevealThumb from "../assets/images/challenge8/challenge8-screen.jpg";
+import galleryThumb from "../assets/images/challenge01/photo1.jpg";
+import checkboxThumb from "../assets/images/challenge02/challenge2-screen.jpg";
+import tooltipThumb from "../assets/images/challenge03/challenge3-screen.jpg";
+import headerThumb from "../assets/images/challenge04/challenge4-screen.jpg";
+import footerThumb from "../assets/images/challenge05/challenge5-screen.jpg";
+import scrollThumb from "../assets/images/challenge06/challenge6-screen.jpg";
+import labelThumb from "../assets/images/challenge07/challenge7-screen.jpg";
+import scrollRevealThumb from "../assets/images/challenge08/challenge8-screen.jpg";
 
 export const pageLinks = [
   {
