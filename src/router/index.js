@@ -152,7 +152,7 @@ const router = createRouter({
             },
             next: {
               path: "/challenge11",
-              title: "10 - ",
+              title: "11 - ",
             },
             ...challengesAnim,
           },
