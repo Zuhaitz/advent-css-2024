@@ -101,6 +101,11 @@
       p {
         display: none;
         font-size: 1.5rem;
+        width: 350px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         -webkit-user-select: none; /* Safari */
         -ms-user-select: none; /* IE 10 and IE 11 */
