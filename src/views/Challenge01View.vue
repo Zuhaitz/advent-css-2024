@@ -1,5 +1,4 @@
 <script setup>
-  import Navbar from "@/components/Navbar.vue";
   import photo1 from "../assets/images/challenge01/photo1.jpg";
   import photo2 from "../assets/images/challenge01/photo2.jpg";
   import photo3 from "../assets/images/challenge01/photo3.jpg";

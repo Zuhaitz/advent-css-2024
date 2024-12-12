@@ -1,31 +1,27 @@
-<script setup>
-  import Navbar from "@/components/Navbar.vue";
-</script>
-
 <template>
-  <Navbar />
+  <div>
+    <div class="progress-bar"></div>
 
-  <div class="progress-bar"></div>
+    <section class="container">
+      <h1 class="page_title">Scroll Indicator</h1>
 
-  <section class="container">
-    <h1 class="page_title">Scroll Indicator</h1>
-
-    <p v-for="i in 5" :key="i">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nemo commodi
-      facere, fugit delectus quisquam accusantium voluptatum, deserunt odit
-      corrupti iste? Optio asperiores odio alias reprehenderit ut,
-      exercitationem minima ad?Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Aperiam officiis quaerat tempora, nam, nihil ratione
-      repellendus dicta velit quae itaque sequi atque fuga odit odio, maxime id
-      deserunt ducimus aut. Lorem ipsum dolor sit, amet consectetur adipisicing
-      elit. Excepturi dolor illo pariatur laboriosam animi fugit et consectetur
-      ullam? Facilis at reiciendis blanditiis accusamus odit pariatur et
-      doloribus omnis ad doloremque. Lorem ipsum dolor, sit amet consectetur
-      adipisicing elit. Nihil laborum neque possimus magnam iure, aspernatur
-      nostrum. Aut magni voluptatibus, eaque ea maiores esse voluptas! Velit
-      aliquid quisquam odit iure obcaecati?
-    </p>
-  </section>
+      <p v-for="i in 5" :key="i">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nemo
+        commodi facere, fugit delectus quisquam accusantium voluptatum, deserunt
+        odit corrupti iste? Optio asperiores odio alias reprehenderit ut,
+        exercitationem minima ad?Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Aperiam officiis quaerat tempora, nam, nihil ratione
+        repellendus dicta velit quae itaque sequi atque fuga odit odio, maxime
+        id deserunt ducimus aut. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Excepturi dolor illo pariatur laboriosam animi fugit
+        et consectetur ullam? Facilis at reiciendis blanditiis accusamus odit
+        pariatur et doloribus omnis ad doloremque. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Nihil laborum neque possimus magnam iure,
+        aspernatur nostrum. Aut magni voluptatibus, eaque ea maiores esse
+        voluptas! Velit aliquid quisquam odit iure obcaecati?
+      </p>
+    </section>
+  </div>
 </template>
 
 <style lang="scss" scoped>

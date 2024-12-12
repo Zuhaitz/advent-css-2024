@@ -1,7 +1,3 @@
-<script setup>
-  import Navbar from "@/components/Navbar.vue";
-</script>
-
 <template>
   <section class="container">
     <h1 class="heading"><span>Heading</span></h1>

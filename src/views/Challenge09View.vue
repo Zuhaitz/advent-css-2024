@@ -1,10 +1,4 @@
-<script setup>
-  import Navbar from "@/components/Navbar.vue";
-</script>
-
 <template>
-  <Navbar />
-
   <section class="container">
     <h1 class="page_title">9 - Button with a Gradient Border</h1>
     <button class="gradient-button">

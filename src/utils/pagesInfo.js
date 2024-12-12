@@ -63,4 +63,10 @@ export const pageLinks = [
     title: "9 - Button with a Gradient Border",
     thumbnail: gradientThumb,
   },
+  {
+    path: "/challenge10",
+    number: 10,
+    title: "10 - Horizontal Scroller with Scroll Snap",
+    thumbnail: gradientThumb,
+  },
 ];

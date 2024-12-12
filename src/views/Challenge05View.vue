@@ -1,35 +1,32 @@
-<script setup>
-  import Navbar from "@/components/Navbar.vue";
-</script>
-
 <template>
-  <Navbar />
+  <div>
+    <section class="container">
+      <h1 class="page_title">Scroll up to Reveal the Footer</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolore
+        eos culpa natus? Necessitatibus eligendi amet corporis, recusandae, eum
+        impedit vel, unde voluptatem expedita sequi in optio. Voluptas, adipisci
+        laboriosam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ad
+        minus libero dolore provident, aut quia id architecto incidunt
+        laboriosam, dolorem dolor eligendi tenetur facere tempora? Est nemo et
+        cumque.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
+        distinctio deleniti? Perspiciatis eos, placeat earum fuga quia quibusdam
+        animi totam doloremque hic nisi ipsam, quisquam quaerat quis quas odio!
+        Molestiae.
+      </p>
+    </section>
 
-  <section class="container">
-    <h1 class="page_title">Scroll up to Reveal the Footer</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolore eos
-      culpa natus? Necessitatibus eligendi amet corporis, recusandae, eum
-      impedit vel, unde voluptatem expedita sequi in optio. Voluptas, adipisci
-      laboriosam.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ad minus
-      libero dolore provident, aut quia id architecto incidunt laboriosam,
-      dolorem dolor eligendi tenetur facere tempora? Est nemo et cumque.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
-      distinctio deleniti? Perspiciatis eos, placeat earum fuga quia quibusdam
-      animi totam doloremque hic nisi ipsam, quisquam quaerat quis quas odio!
-      Molestiae.
-    </p>
-  </section>
-
-  <footer class="footer">
-    <p>Copyright &copy; 2024. All Rights Reserved</p>
-    <p>Disclaimers. Privacy Policy. Terms & Conditions</p>
-  </footer>
+    <footer class="footer">
+      <p>Copyright &copy; 2024. All Rights Reserved</p>
+      <p>Disclaimers. Privacy Policy. Terms & Conditions</p>
+    </footer>
+  </div>
 </template>
 
 <style lang="scss" scoped>

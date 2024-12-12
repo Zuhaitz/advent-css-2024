@@ -1,5 +1,4 @@
 <script setup>
-  import Navbar from "@/components/Navbar.vue";
   import checkboxIcon from "../assets/images/challenge02/check.svg";
 </script>
 
