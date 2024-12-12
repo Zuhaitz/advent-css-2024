@@ -124,22 +124,7 @@ const router = createRouter({
             ...challengesAnim,
           },
         },
-        {
-          path: "/challenge8",
-          name: "challenge8",
-          component: () => import("../views/Challenge08View.vue"),
-          meta: {
-            previous: {
-              path: "/challenge7",
-              title: "7 - Animated Label",
-            },
-            next: {
-              path: "/challenge9",
-              title: "9 - Button with a Gradient Border",
-            },
-            ...challengesAnim,
-          },
-        },
+
         {
           path: "/challenge9",
           name: "challenge9",
@@ -173,6 +158,22 @@ const router = createRouter({
           },
         },
       ],
+    },
+    {
+      path: "/challenge8",
+      name: "challenge8",
+      component: () => import("../views/Challenge08View.vue"),
+      meta: {
+        previous: {
+          path: "/challenge7",
+          title: "7 - Animated Label",
+        },
+        next: {
+          path: "/challenge9",
+          title: "9 - Button with a Gradient Border",
+        },
+        ...challengesAnim,
+      },
     },
   ],
 });
