@@ -126,6 +126,8 @@
         text-transform: uppercase;
         font-family: "Public Sans", sans-serif;
         font-style: bold;
+
+        user-select: none;
       }
 
       &__title {

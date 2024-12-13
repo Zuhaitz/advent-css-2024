@@ -8,9 +8,9 @@
 
   <section class="container">
     <div class="sign">
-      <img :src="arrowDown" alt="arrow down" />
+      <img :src="arrowDown" alt="arrow down" draggable="false" />
       <p>Scroll down</p>
-      <img :src="arrowDown" alt="arrow down" />
+      <img :src="arrowDown" alt="arrow down" draggable="false" />
     </div>
   </section>
 </template>
