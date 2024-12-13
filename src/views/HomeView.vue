@@ -16,7 +16,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       align-items: center;
-      gap: 1.5rem;
+      gap: 1.5rem 2rem;
 
       height: 100%;
       padding: 10px 30px;

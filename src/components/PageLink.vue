@@ -24,7 +24,10 @@
       height: 240px;
 
       overflow: hidden;
-      border-radius: 0.5rem;
+      border-radius: 1rem;
+      outline: 4px solid white;
+      outline-offset: 4px;
+      transition: outline 0.2s ease-in-out;
 
       img {
         width: 100%;
@@ -38,13 +41,19 @@
         position: absolute;
         bottom: -30%;
         width: 100%;
-        padding: 5px 10px;
+        padding: 8px 15px;
         background-color: rgba(0, 0, 0, 0.5);
 
         transition: all 0.2s ease-in-out;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       &:hover {
+        outline-color: #30aa82;
+
         img {
           transform: scale(1.1);
         }
