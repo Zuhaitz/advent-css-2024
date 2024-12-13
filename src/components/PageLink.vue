@@ -10,8 +10,8 @@
 </script>
 
 <template>
-  <RouterLink :to="path" class="project-link">
-    <img :src="thumbnail" :alt="'Challenge ' + number" />
+  <RouterLink :to="path" class="project-link" draggable="false">
+    <img :src="thumbnail" :alt="'Challenge ' + number" draggable="false" />
     <p>{{ title }}</p>
   </RouterLink>
 </template>
@@ -34,7 +34,7 @@
         height: 100%;
         object-fit: cover;
         aspect-ratio: 1 / 1;
-        transition: all 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out;
       }
 
       p {
@@ -49,6 +49,8 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        user-select: none;
       }
 
       &:hover {

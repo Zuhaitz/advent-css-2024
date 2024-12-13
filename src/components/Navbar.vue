@@ -15,17 +15,24 @@
       <img :src="logo" alt="logo" />
       <p>Advent <span class="colored-text">CSS</span> 2024</p>
     </div>
-    <RouterLink v-else :to="previous.path" class="left-link">
+    <RouterLink v-else :to="previous.path" class="left-link" draggable="false">
       <img :src="leftArrowIcon" alt="left icon" />
       <p>{{ previous.title }}</p>
     </RouterLink>
 
     <nav>
-      <RouterLink to="/" class="nav-link">Home</RouterLink>
-      <RouterLink to="/about" class="nav-link">About</RouterLink>
+      <RouterLink to="/" class="nav-link" draggable="false">Home</RouterLink>
+      <RouterLink to="/about" class="nav-link" draggable="false"
+        >About</RouterLink
+      >
     </nav>
 
-    <RouterLink v-if="next" :to="next.path" class="right-link">
+    <RouterLink
+      v-if="next"
+      :to="next.path"
+      class="right-link"
+      draggable="false"
+    >
       <p>{{ next.title }}</p>
       <img :src="leftArrowIcon" alt="left icon" />
     </RouterLink>

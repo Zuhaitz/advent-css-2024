@@ -24,9 +24,9 @@
 
     @media (min-width: 1024px) {
       .page {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        justify-items: center;
       }
     }
   }
