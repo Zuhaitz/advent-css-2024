@@ -7,6 +7,8 @@ import scrollThumb from "../assets/images/challenge06/challenge6-screen.jpg";
 import labelThumb from "../assets/images/challenge07/challenge7-screen.jpg";
 import scrollRevealThumb from "../assets/images/challenge08/challenge8-screen.jpg";
 import gradientThumb from "../assets/images/challenge09/challenge9-screen.jpg";
+import horizontalScrollThumb from "../assets/images/challenge10/challenge10-screen.jpg";
+import verticalTextThumb from "../assets/images/challenge11/challenge11-screen.jpg";
 
 export const pageLinks = [
   {
@@ -67,6 +69,12 @@ export const pageLinks = [
     path: "/challenge10",
     number: 10,
     title: "10 - Horizontal Scroller with Scroll Snap",
-    thumbnail: gradientThumb,
+    thumbnail: horizontalScrollThumb,
+  },
+  {
+    path: "/challenge11",
+    number: 11,
+    title: "11 - Vertical Text with Outline",
+    thumbnail: verticalTextThumb,
   },
 ];

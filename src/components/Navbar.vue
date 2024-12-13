@@ -101,7 +101,7 @@
       p {
         display: none;
         font-size: 1.5rem;
-        width: 350px;
+        max-width: 350px;
 
         white-space: nowrap;
         overflow: hidden;
