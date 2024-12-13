@@ -71,7 +71,7 @@
       position: relative;
       overflow: hidden;
 
-      background-color: white;
+      background-color: #1e1e1e;
       timeline-scope: --scroll-timeline;
 
       &__images {
