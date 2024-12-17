@@ -9,6 +9,7 @@ import scrollRevealThumb from "../assets/images/challenge08/challenge8-screen.jp
 import gradientThumb from "../assets/images/challenge09/challenge9-screen.jpg";
 import horizontalScrollThumb from "../assets/images/challenge10/challenge10-screen.jpg";
 import verticalTextThumb from "../assets/images/challenge11/challenge11-screen.jpg";
+import htmlThumb from "../assets/images/challenge12/challenge12-screen.jpg";
 
 export const pageLinks = [
   {
@@ -81,6 +82,12 @@ export const pageLinks = [
     path: "/challenge12",
     number: 12,
     title: "12 - Same HTML, Different CSS",
-    thumbnail: verticalTextThumb,
+    thumbnail: htmlThumb,
+  },
+  {
+    path: "/challenge13",
+    number: 13,
+    title: "13 - Three-State Toggle",
+    thumbnail: htmlThumb,
   },
 ];
