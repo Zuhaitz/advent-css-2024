@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+@layer components {
+  * {
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-style: bold;
+  }
+
+  .avatar {
+    width: 72px;
+    height: 72px;
+  }
+
+  .testimonial {
+    position: relative;
+    width: min(350px, 90%);
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .testimonial::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    left: -20px;
+
+    width: 43px;
+    height: 33px;
+    background: url("../images/open-quotes.svg") 0 0 no-repeat;
+  }
+
+  div[id*="testimonials-"] > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  /* Testimonials 3 */
+  #testimonials-3 > section {
+    margin-bottom: 72px;
+    text-align: center;
+  }
+
+  #testimonials-3 .testimonial::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -20px;
+
+    width: 43px;
+    height: 33px;
+    background: url("../images/close-quotes.svg") 0 0 no-repeat;
+  }
+
+  /* Testimonials 4 */
+  #testimonials-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+  }
+
+  #testimonials-4 > section {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    /* Testimonials 4 */
+    #testimonials-4 {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    /* Testimonials 4 */
+    #testimonials-4 {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

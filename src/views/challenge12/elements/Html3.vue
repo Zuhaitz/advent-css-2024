@@ -10,7 +10,9 @@
         Each day's challenge gave me the perfect mix of creativity and
         problem-solving. By Christmas, I felt like a CSS wizard!
       </div>
-      <div class="cite">Samantha L., Junior Developer</div>
+      <div class="cite">
+        <strong>Samantha L.,</strong> <em>Junior Developer</em>
+      </div>
     </section>
 
     <!-- TESTIMONIAL 2 -->
@@ -23,7 +25,9 @@
         engaging and varied, making me excited to tackle something new each day.
         My portfolio is shining brighter than ever now.
       </div>
-      <div class="cite">James T., Aspiring Frontend Developer</div>
+      <div class="cite">
+        <strong>James T.,</strong> <em>Aspiring Frontend Developer</em>
+      </div>
     </section>
 
     <!-- TESTIMONIAL 3 -->
@@ -36,7 +40,7 @@
         approachable. The challenges ranged from beginner-friendly to mildly
         complex, so I always felt like I was learning without being overwhelmed.
       </div>
-      <div class="cite">Ryan G., CSS Newbie</div>
+      <div class="cite"><strong>Ryan G.,</strong> <em>CSS Newbie</em></div>
     </section>
 
     <!-- TESTIMONIAL 4 -->
@@ -54,7 +58,9 @@
         month, my understanding of layouts, animations, and modern techniques
         had completely transformed. Can't wait for next year!
       </div>
-      <div class="cite">Elena S., Frontend Developer</div>
+      <div class="cite">
+        <strong>Elena S.,</strong> <em>Frontend Developer</em>
+      </div>
     </section>
   </div>
 </template>
