@@ -77,4 +77,10 @@ export const pageLinks = [
     title: "11 - Vertical Text with Outline",
     thumbnail: verticalTextThumb,
   },
+  {
+    path: "/challenge12",
+    number: 12,
+    title: "12 - Same HTML, Different CSS",
+    thumbnail: verticalTextThumb,
+  },
 ];

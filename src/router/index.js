@@ -168,7 +168,23 @@ const router = createRouter({
             },
             next: {
               path: "/challenge12",
-              title: "12 - ",
+              title: "12 - Same HTML, Different CSS",
+            },
+            ...challengesAnim,
+          },
+        },
+        {
+          path: "/challenge12",
+          name: "challenge12",
+          component: () => import("../views/challenge12/Challenge12View.vue"),
+          meta: {
+            previous: {
+              path: "/challenge11",
+              title: "11 - Vertical Text with Outline",
+            },
+            next: {
+              path: "/challenge13",
+              title: "13 - Three-State Toggle",
             },
             ...challengesAnim,
           },
