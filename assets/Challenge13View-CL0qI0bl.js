@@ -1,0 +1,1 @@
+import{_ as t,c as s,b as a,o}from"./index-Dd0jsOvr.js";const c={class:"container"},n={__name:"Challenge13View",setup(_){return(r,e)=>(o(),s("section",c,e[0]||(e[0]=[a("h1",{class:"page_title"},"13 - Three-State Toggle",-1)])))}},p=t(n,[["__scopeId","data-v-979d6787"]]);export{p as default};
