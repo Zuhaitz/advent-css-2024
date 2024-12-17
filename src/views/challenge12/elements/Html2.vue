@@ -1,5 +1,5 @@
 <template>
-  <div id="testimonials-1">
+  <div id="testimonials-2">
     <!-- TESTIMONIAL 1 -->
     <section>
       <div class="avatar">

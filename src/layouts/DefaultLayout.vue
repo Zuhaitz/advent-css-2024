@@ -16,8 +16,10 @@
 </script>
 
 <style lang="scss" scoped>
-  .animate__animated {
-    --animate-duration: 0.3s;
-    --animate-timing-function: ease-in-out;
+  @layer base {
+    .animate__animated {
+      --animate-duration: 0.3s;
+      --animate-timing-function: ease-in-out;
+    }
   }
 </style>
