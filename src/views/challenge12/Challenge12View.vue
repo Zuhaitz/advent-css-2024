@@ -60,7 +60,7 @@
         border: none;
         background-color: #1e1e1e;
 
-        transition: all 0.1s linear;
+        transition: background-color 0.1s linear, color 0.1s linear;
 
         &:hover {
           color: #1e1e1e;

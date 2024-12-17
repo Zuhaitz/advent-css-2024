@@ -7,17 +7,18 @@
     line-height: 24px;
   }
 
-  em {
-    font-style: italic;
-  }
-
-  strong {
-    font-style: bold;
-  }
-
   .avatar {
     width: 72px;
     height: 72px;
+
+    grid-area: avatar;
+  }
+
+  .avatar > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
   }
 
   .testimonial {
@@ -25,6 +26,8 @@
     width: min(350px, 90%);
     font-size: 16px;
     line-height: 32px;
+
+    grid-area: testimonial;
   }
 
   .testimonial::before {
@@ -37,6 +40,18 @@
     width: 43px;
     height: 33px;
     background: url("../images/open-quotes.svg") 0 0 no-repeat;
+  }
+
+  .cite {
+    grid-area: cite;
+  }
+
+  .cite > em {
+    font-style: italic;
+  }
+
+  .cite > strong {
+    font-style: bold;
   }
 
   div[id*="testimonials-"] > section {
@@ -73,6 +88,48 @@
 
   #testimonials-4 > section {
     width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    /* Testimonials 1 */
+    #testimonials-1,
+    #testimonials-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #testimonials-1 > section,
+    #testimonials-2 > section {
+      position: relative;
+      display: grid;
+      width: min(450px, 90%);
+      gap: 6px;
+      grid-template-areas:
+        "avatar testimonial"
+        "avatar cite";
+      align-items: start;
+    }
+
+    #testimonials-1 .testimonial,
+    #testimonials-1 .cite,
+    #testimonials-2 .testimonial,
+    #testimonials-2 .cite {
+      margin-left: 16px;
+    }
+
+    /* Testimonials 2 */
+    #testimonials-2 > section:nth-child(even) {
+      column-gap: 16px;
+      grid-template-areas:
+        "testimonial avatar"
+        "cite avatar";
+    }
+
+    #testimonials-2 > section:nth-child(even) .testimonial,
+    #testimonials-2 > section:nth-child(even) .cite {
+      margin-right: 16px;
+    }
   }
 
   @media (min-width: 768px) {
