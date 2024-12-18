@@ -9,9 +9,26 @@
     <h1 class="page_title">13 - Three-State Toggle</h1>
 
     <div class="toggle">
-      <button autofocus><CalendarIcon /></button>
-      <button><UserIcon /></button>
-      <button><FormIcon /></button>
+      <div class="toggle__option">
+        <input
+          type="radio"
+          id="calendar"
+          name="section"
+          value="calendar"
+          checked
+        />
+        <label for="calendar"><CalendarIcon /></label>
+      </div>
+
+      <div class="toggle__option">
+        <input type="radio" id="user" name="section" value="user" />
+        <label for="user"><UserIcon /></label>
+      </div>
+
+      <div class="toggle__option">
+        <input type="radio" id="form" name="section" value="form" />
+        <label for="form"><FormIcon /></label>
+      </div>
       <span class=""></span>
     </div>
   </section>
@@ -39,35 +56,41 @@
         height: 100%;
 
         background-color: #30aa82;
-        transition: 9999s transform 0.2s linear;
+        transition: transform 0.2s linear;
       }
 
-      button {
-        cursor: pointer;
-        padding: 10px 20px;
-        border: 2px solid #30aa82;
-        background-color: transparent;
+      &__option {
+        display: flex;
 
-        &:focus > svg {
-          color: white;
+        input {
+          display: none;
+
+          &:checked ~ label > svg {
+            color: white;
+          }
+        }
+
+        label {
+          cursor: pointer;
+          padding: 10px 20px;
+          border: 2px solid #30aa82;
+          background-color: transparent;
         }
       }
 
       svg {
         color: #30aa82;
+        transition: color 0.1s linear;
       }
 
-      &:has(:nth-child(1):focus)::before {
+      &:has(:nth-child(1) > input:checked)::before {
         transform: translateX(0);
-        transition: transform 0.2s linear;
       }
-      &:has(:nth-child(2):focus)::before {
+      &:has(:nth-child(2) > input:checked)::before {
         transform: translateX(101%);
-        transition: transform 0.2s linear;
       }
-      &:has(:nth-child(3):focus)::before {
+      &:has(:nth-child(3) > input:checked)::before {
         transform: translateX(201%);
-        transition: transform 0.2s linear;
       }
     }
   }
