@@ -62,7 +62,8 @@
 
         transition: background-color 0.1s linear, color 0.1s linear;
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: #1e1e1e;
           background-color: #30aa82;
         }
