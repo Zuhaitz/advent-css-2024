@@ -17,7 +17,7 @@
 </template>
 
 <style lang="scss" scoped>
-  $toggle-ball-size: 24px * 5;
+  $toggle-ball-size: 16px * 5;
   $track-height: $toggle-ball-size + $toggle-ball-size * 0.25;
   $track-width: $toggle-ball-size * 2.5;
   $green: #02ff94;
