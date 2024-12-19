@@ -21,11 +21,12 @@
     photo8,
   ];
 
+  const dist = 300;
   const goRight = () => {
-    document.getElementById("carousel__images").scrollBy(200, 0);
+    document.getElementById("carousel__images").scrollBy(dist, 0);
   };
   const goLeft = () => {
-    document.getElementById("carousel__images").scrollBy(-200, 0);
+    document.getElementById("carousel__images").scrollBy(-dist, 0);
   };
 </script>
 
@@ -78,12 +79,15 @@
         position: relative;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         gap: 10px;
 
         anchor-name: --carousel-images;
 
         width: 100%;
-        height: 320px;
+        height: 200px;
+        padding-right: 50%;
+        padding-left: 50%;
 
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
@@ -99,16 +103,15 @@
       }
 
       &__item {
-        flex: 0 0 100%;
+        flex: 1 0 auto;
         scroll-snap-align: center;
         scroll-snap-stop: always;
       }
 
       img {
-        width: 100%;
         height: 100%;
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
+        width: auto;
+        object-fit: contain;
       }
 
       &__buttons {
@@ -117,7 +120,7 @@
         bottom: 50%;
         transform: translateY(50%);
 
-        display: flex;
+        display: none;
         justify-content: space-between;
         width: 100%;
         height: 100%;
@@ -176,8 +179,8 @@
         // border-radius: 20px;
 
         &__images {
-          height: 480px;
-          padding: 10px 30px;
+          height: 380px;
+          // padding: 10px 30px;
           margin-bottom: 10px;
         }
 
@@ -189,6 +192,14 @@
           animation-timeline: --view;
         }
 
+        &__buttons {
+          display: flex;
+        }
+
+        &__button > img {
+          display: none;
+        }
+
         &__progress {
           border-radius: 10rem;
         }
@@ -197,10 +208,14 @@
 
     @media (min-width: 1024px) {
       .carousel {
-        width: 800px;
+        width: min(800px, 90%);
 
-        &__buttons {
-          display: flex;
+        &__images {
+          height: 480px;
+        }
+
+        &__button > img {
+          display: block;
         }
       }
     }
