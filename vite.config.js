@@ -6,7 +6,7 @@ import vueDevTools from "vite-plugin-vue-devtools";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/advent-css-2024",
+  base: "/advent-css-2024/",
   plugins: [vue(), vueDevTools()],
   resolve: {
     alias: {
