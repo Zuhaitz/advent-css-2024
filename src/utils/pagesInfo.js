@@ -11,6 +11,7 @@ import horizontalScrollThumb from "../assets/images/challenge10/challenge10-scre
 import verticalTextThumb from "../assets/images/challenge11/challenge11-screen.jpg";
 import htmlThumb from "../assets/images/challenge12/challenge12-screen.jpg";
 import toggleThumb from "../assets/images/challenge13/challenge13-screen.jpg";
+import ribbonThumb from "../assets/images/challenge14/challenge14-screen.jpg";
 
 export const pageLinks = [
   {
@@ -95,6 +96,6 @@ export const pageLinks = [
     path: "/challenge14",
     number: 14,
     title: "14 - Corner Ribbon",
-    thumbnail: toggleThumb,
+    thumbnail: ribbonThumb,
   },
 ];
