@@ -12,6 +12,7 @@ import verticalTextThumb from "../assets/images/challenge11/challenge11-screen.j
 import htmlThumb from "../assets/images/challenge12/challenge12-screen.jpg";
 import toggleThumb from "../assets/images/challenge13/challenge13-screen.jpg";
 import ribbonThumb from "../assets/images/challenge14/challenge14-screen.jpg";
+import highlightThumb from "../assets/images/challenge15/challenge15-screen.jpg";
 
 export const pageLinks = [
   {
@@ -102,6 +103,6 @@ export const pageLinks = [
     path: "/challenge15",
     number: 15,
     title: "15 - Highlight Text",
-    thumbnail: ribbonThumb,
+    thumbnail: highlightThumb,
   },
 ];

@@ -39,15 +39,21 @@
       }
     }
 
-    p {
-      width: min(800px, 80%);
-    }
-
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 10px;
+    }
+
+    p {
+      cursor: default;
+      width: min(800px, 80%);
+
+      &:hover > .highlighted-text {
+        animation: grow 0.2s ease-in-out;
+        animation-fill-mode: forwards;
+      }
     }
 
     .highlighted-text {
@@ -64,11 +70,6 @@
       );
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone;
-
-      &:hover {
-        animation: grow 0.2s ease-in-out;
-        animation-fill-mode: forwards;
-      }
     }
 
     @media (min-width: 640px) {
