@@ -91,4 +91,10 @@ export const pageLinks = [
     title: "13 - Three-State Toggle",
     thumbnail: toggleThumb,
   },
+  {
+    path: "/challenge14",
+    number: 14,
+    title: "14 - Corner Ribbon",
+    thumbnail: toggleThumb,
+  },
 ];
