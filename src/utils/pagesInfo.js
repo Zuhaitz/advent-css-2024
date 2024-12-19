@@ -98,4 +98,10 @@ export const pageLinks = [
     title: "14 - Corner Ribbon",
     thumbnail: ribbonThumb,
   },
+  {
+    path: "/challenge15",
+    number: 15,
+    title: "15 - Highlight Text",
+    thumbnail: ribbonThumb,
+  },
 ];

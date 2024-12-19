@@ -4,7 +4,7 @@
 
 <template>
   <section class="container">
-    <h1 class="page_title">2 - CSS Only Toggle</h1>
+    <h1 class="page-title">2 - CSS Only Toggle</h1>
     <label for="toggle" class="toggle">
       <input type="checkbox" name="toggle" id="toggle" class="toggle__input" />
       <div class="toggle__track">

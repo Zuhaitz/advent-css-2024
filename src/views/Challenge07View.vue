@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h1 class="page_title">7 - Animated Label</h1>
+    <h1 class="page-title">7 - Animated Label</h1>
     <div class="form_input">
       <input
         type="email"

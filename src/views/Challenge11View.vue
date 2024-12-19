@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h1 class="page_title">11 - Vertical Text with Outline</h1>
+    <h1 class="page-title">11 - Vertical Text with Outline</h1>
     <div class="merry">
       <h2 class="merry__title">Merry <span>Ipsum</span></h2>
       <div>

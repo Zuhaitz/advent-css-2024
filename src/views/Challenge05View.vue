@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="container">
-      <h1 class="page_title">Scroll up to Reveal the Footer</h1>
+      <h1 class="page-title">Scroll up to Reveal the Footer</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolore
         eos culpa natus? Necessitatibus eligendi amet corporis, recusandae, eum

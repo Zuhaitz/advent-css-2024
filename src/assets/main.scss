@@ -45,7 +45,7 @@
 }
 
 @layer components {
-  .page_title {
+  .page-title {
     width: fit-content;
     padding-bottom: 0.5rem;
     margin: 1rem;
@@ -59,7 +59,7 @@
   }
 
   @media (min-width: 768px) {
-    .page_title {
+    .page-title {
       text-decoration: underline;
       border-bottom: 1px solid #30aa82;
       padding-bottom: 0;

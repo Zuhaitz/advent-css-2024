@@ -32,7 +32,7 @@
 
 <template>
   <section class="container">
-    <h1 class="page_title">10 - Horizontal Scroller with Scroll Snap</h1>
+    <h1 class="page-title">10 - Horizontal Scroller with Scroll Snap</h1>
 
     <div class="carousel">
       <div id="carousel__images" class="carousel__images">

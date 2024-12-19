@@ -4,7 +4,7 @@
 
 <template>
   <section class="container">
-    <h1 class="page_title">About page</h1>
+    <h1 class="page-title">About page</h1>
     <p>
       This page shows a collection of exercises that a part of the
       <a href="https://www.adventofcss.com" target="_blank" class="colored-text"

@@ -3,7 +3,7 @@
     <div class="progress-bar"></div>
 
     <section class="container">
-      <h1 class="page_title">Scroll Indicator</h1>
+      <h1 class="page-title">Scroll Indicator</h1>
 
       <p v-for="i in 5" :key="i">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nemo

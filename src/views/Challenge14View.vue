@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h1 class="page_title">14 - Corner Ribbon</h1>
+    <h1 class="page-title">14 - Corner Ribbon</h1>
 
     <div class="card">
       <h2>This is a card :)</h2>

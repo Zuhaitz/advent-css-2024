@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h1 class="page_title">3 - CSS Only Tooltip</h1>
+    <h1 class="page-title">3 - CSS Only Tooltip</h1>
     <div class="box flex-center">
       <p class="text">My text <span class="text__tooltip">Tooltip</span></p>
     </div>

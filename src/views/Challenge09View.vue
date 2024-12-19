@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h1 class="page_title">9 - Button with a Gradient Border</h1>
+    <h1 class="page-title">9 - Button with a Gradient Border</h1>
     <button class="gradient-button">
       <span>CSS Rocks!</span>
     </button>

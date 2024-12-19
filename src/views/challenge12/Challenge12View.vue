@@ -13,7 +13,7 @@
 
 <template>
   <section class="container">
-    <h1 class="page_title">12 - Same HTML, Different CSS</h1>
+    <h1 class="page-title">12 - Same HTML, Different CSS</h1>
 
     <div class="style-buttons">
       <button @click="handleHtml(html1)">Style 1</button>

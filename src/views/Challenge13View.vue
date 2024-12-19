@@ -6,7 +6,7 @@
 
 <template>
   <section class="container">
-    <h1 class="page_title">13 - Three-State Toggle</h1>
+    <h1 class="page-title">13 - Three-State Toggle</h1>
 
     <div class="toggle">
       <div class="toggle__option">
