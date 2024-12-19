@@ -120,7 +120,7 @@
         bottom: 50%;
         transform: translateY(50%);
 
-        display: none;
+        display: flex;
         justify-content: space-between;
         width: 100%;
         height: 100%;
@@ -144,6 +144,8 @@
         background-image: linear-gradient(to right, #1e1e1e 0%, transparent);
 
         img {
+          display: none;
+
           height: 100%;
           width: 100%;
           object-fit: contain;
@@ -190,14 +192,6 @@
           animation: progress auto linear;
           animation-range: entry 0% cover 40%;
           animation-timeline: --view;
-        }
-
-        &__buttons {
-          display: flex;
-        }
-
-        &__button > img {
-          display: none;
         }
 
         &__progress {
