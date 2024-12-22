@@ -13,6 +13,7 @@ import htmlThumb from "../assets/images/challenge12/challenge12-screen.jpg";
 import toggleThumb from "../assets/images/challenge13/challenge13-screen.jpg";
 import ribbonThumb from "../assets/images/challenge14/challenge14-screen.jpg";
 import highlightThumb from "../assets/images/challenge15/challenge15-screen.jpg";
+import customScrollThumb from "../assets/images/challenge16/challenge16-screen.jpg";
 
 export const pageLinks = [
   {
@@ -104,5 +105,11 @@ export const pageLinks = [
     number: 15,
     title: "15 - Highlight Text",
     thumbnail: highlightThumb,
+  },
+  {
+    path: "/challenge16",
+    number: 16,
+    title: "16 - Custom Scroll Bar",
+    thumbnail: customScrollThumb,
   },
 ];
