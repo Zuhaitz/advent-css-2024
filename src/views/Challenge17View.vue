@@ -46,6 +46,7 @@
 
       color: black;
 
+      background-color: white;
       background-image: url("../assets/images/challenge17/graph-paper.jpeg");
       background-size: 700px;
 
