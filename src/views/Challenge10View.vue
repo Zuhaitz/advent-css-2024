@@ -139,7 +139,7 @@
         border: none;
         background-color: transparent;
 
-        pointer-events: all;
+        pointer-events: none;
 
         background-image: linear-gradient(to right, #1e1e1e 0%, transparent);
 
@@ -208,8 +208,12 @@
           height: 480px;
         }
 
-        &__button > img {
-          display: block;
+        &__button {
+          pointer-events: all;
+
+          img {
+            display: block;
+          }
         }
       }
     }
