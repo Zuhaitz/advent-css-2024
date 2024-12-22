@@ -21,7 +21,7 @@
     photo8,
   ];
 
-  const dist = 300;
+  const dist = 400;
   const goRight = () => {
     document.getElementById("carousel__images").scrollBy(dist, 0);
   };
