@@ -15,6 +15,7 @@ import ribbonThumb from "../assets/images/challenge14/challenge14-screen.jpg";
 import highlightThumb from "../assets/images/challenge15/challenge15-screen.jpg";
 import customScrollThumb from "../assets/images/challenge16/challenge16-screen.jpg";
 import bracketsThumb from "../assets/images/challenge17/challenge17-screen.jpg";
+import skeletonThumb from "../assets/images/challenge18/challenge18-screen.jpg";
 
 export const pageLinks = [
   {
@@ -118,5 +119,11 @@ export const pageLinks = [
     number: 17,
     title: "17 - CSS Only Brackets",
     thumbnail: bracketsThumb,
+  },
+  {
+    path: "/challenge18",
+    number: 18,
+    title: "18 - Skeleton Loading Image",
+    thumbnail: skeletonThumb,
   },
 ];

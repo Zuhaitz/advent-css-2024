@@ -273,6 +273,22 @@ const router = createRouter({
             ...challengesAnim,
           },
         },
+        {
+          path: "/challenge18",
+          name: "challenge18",
+          component: () => import("../views/Challenge18View.vue"),
+          meta: {
+            previous: {
+              path: "/challenge17",
+              title: "17 - CSS Only Brackets",
+            },
+            next: {
+              path: "/challenge19",
+              title: "19 - News Layout with Container Queries",
+            },
+            ...challengesAnim,
+          },
+        },
       ],
     },
     {
