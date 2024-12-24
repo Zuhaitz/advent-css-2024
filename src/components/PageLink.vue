@@ -39,7 +39,7 @@
 
       p {
         position: absolute;
-        bottom: -30%;
+        bottom: 0;
         width: 100%;
         padding: 8px 15px;
         background-color: rgba(0, 0, 0, 0.5);
@@ -73,6 +73,10 @@
 
         img {
           aspect-ratio: 16 / 9;
+        }
+
+        p {
+          bottom: -30%;
         }
       }
     }
