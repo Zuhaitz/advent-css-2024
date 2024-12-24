@@ -17,6 +17,7 @@ import customScrollThumb from "../assets/images/thumbnails/challenge16-screen.jp
 import bracketsThumb from "../assets/images/thumbnails/challenge17-screen.jpg";
 import skeletonThumb from "../assets/images/thumbnails/challenge18-screen.jpg";
 import newsLayoutThumb from "../assets/images/thumbnails/challenge19-screen.jpg";
+import frostedThumb from "../assets/images/thumbnails/challenge20-screen.jpg";
 
 export const pageLinks = [
   {
@@ -132,5 +133,11 @@ export const pageLinks = [
     number: 19,
     title: "19 - News Layout with Container Queries",
     thumbnail: newsLayoutThumb,
+  },
+  {
+    path: "/challenge20",
+    number: 20,
+    title: "20 - Frosted Glass Effect",
+    thumbnail: frostedThumb,
   },
 ];
