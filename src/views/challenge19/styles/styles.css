@@ -1,0 +1,118 @@
+@layer base {
+  * {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+
+  img {
+    object-fit: cover;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding: 45px; */
+    padding: 10px;
+    /* gap: 42px; */
+  }
+
+  .container > section > article {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.22;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #30aa82;
+  }
+
+  .container > section > article > img {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      gap: 42px;
+    }
+
+    .container > section > article {
+      border-bottom: none;
+    }
+
+    /* FIRST COLUMN */
+    .container > section:nth-child(1) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: min-content;
+      justify-content: space-between;
+
+      gap: 16px;
+
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.22;
+    }
+
+    .container > section:nth-child(1) > article {
+      width: 160px;
+      grid-column: span 1;
+    }
+
+    .container > section:nth-child(1) > article > img {
+      width: 160px;
+      height: 110px;
+    }
+
+    .container > section:nth-child(1) > article:first-child {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 16px;
+
+      width: 516px;
+      margin-bottom: 60px;
+
+      font-size: 45px;
+
+      grid-column: span 3;
+    }
+
+    .container > section:nth-child(1) > article:first-child > img {
+      width: 516px;
+      height: 313px;
+    }
+
+    /* SECOND COLUMN */
+    .container > section:nth-child(2) {
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.22;
+    }
+
+    .container > section:nth-child(2) > article {
+      width: 440px;
+    }
+
+    .container > section:nth-child(2) > article > img {
+      width: 440px;
+      height: 250px;
+    }
+
+    /* THIRD COLUMN */
+    .container > section:nth-child(3) {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.22;
+    }
+
+    .container > section:nth-child(3) > article {
+      width: 320px;
+    }
+
+    .container > section:nth-child(3) > article > img {
+      width: 320px;
+      height: 180px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container">
     <!-- FIRST COLUMN -->
     <section>
       <article>
