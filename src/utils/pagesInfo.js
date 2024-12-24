@@ -1,21 +1,22 @@
 import galleryThumb from "../assets/images/challenge01/photo1.jpg";
-import checkboxThumb from "../assets/images/challenge02/challenge2-screen.jpg";
-import tooltipThumb from "../assets/images/challenge03/challenge3-screen.jpg";
-import headerThumb from "../assets/images/challenge04/challenge4-screen.jpg";
-import footerThumb from "../assets/images/challenge05/challenge5-screen.jpg";
-import scrollThumb from "../assets/images/challenge06/challenge6-screen.jpg";
-import labelThumb from "../assets/images/challenge07/challenge7-screen.jpg";
-import scrollRevealThumb from "../assets/images/challenge08/challenge8-screen.jpg";
-import gradientThumb from "../assets/images/challenge09/challenge9-screen.jpg";
-import horizontalScrollThumb from "../assets/images/challenge10/challenge10-screen.jpg";
-import verticalTextThumb from "../assets/images/challenge11/challenge11-screen.jpg";
-import htmlThumb from "../assets/images/challenge12/challenge12-screen.jpg";
-import toggleThumb from "../assets/images/challenge13/challenge13-screen.jpg";
-import ribbonThumb from "../assets/images/challenge14/challenge14-screen.jpg";
-import highlightThumb from "../assets/images/challenge15/challenge15-screen.jpg";
-import customScrollThumb from "../assets/images/challenge16/challenge16-screen.jpg";
-import bracketsThumb from "../assets/images/challenge17/challenge17-screen.jpg";
-import skeletonThumb from "../assets/images/challenge18/challenge18-screen.jpg";
+import checkboxThumb from "../assets/images/thumbnails/challenge2-screen.jpg";
+import tooltipThumb from "../assets/images/thumbnails/challenge3-screen.jpg";
+import headerThumb from "../assets/images/thumbnails/challenge4-screen.jpg";
+import footerThumb from "../assets/images/thumbnails/challenge5-screen.jpg";
+import scrollThumb from "../assets/images/thumbnails/challenge6-screen.jpg";
+import labelThumb from "../assets/images/thumbnails/challenge7-screen.jpg";
+import scrollRevealThumb from "../assets/images/thumbnails/challenge8-screen.jpg";
+import gradientThumb from "../assets/images/thumbnails/challenge9-screen.jpg";
+import horizontalScrollThumb from "../assets/images/thumbnails/challenge10-screen.jpg";
+import verticalTextThumb from "../assets/images/thumbnails/challenge11-screen.jpg";
+import htmlThumb from "../assets/images/thumbnails/challenge12-screen.jpg";
+import toggleThumb from "../assets/images/thumbnails/challenge13-screen.jpg";
+import ribbonThumb from "../assets/images/thumbnails/challenge14-screen.jpg";
+import highlightThumb from "../assets/images/thumbnails/challenge15-screen.jpg";
+import customScrollThumb from "../assets/images/thumbnails/challenge16-screen.jpg";
+import bracketsThumb from "../assets/images/thumbnails/challenge17-screen.jpg";
+import skeletonThumb from "../assets/images/thumbnails/challenge18-screen.jpg";
+import newsLayoutThumb from "../assets/images/thumbnails/challenge19-screen.jpg";
 
 export const pageLinks = [
   {
@@ -125,5 +126,11 @@ export const pageLinks = [
     number: 18,
     title: "18 - Skeleton Loading Image",
     thumbnail: skeletonThumb,
+  },
+  {
+    path: "/challenge19",
+    number: 19,
+    title: "19 - News Layout with Container Queries",
+    thumbnail: newsLayoutThumb,
   },
 ];
