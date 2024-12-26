@@ -5,14 +5,22 @@
 
 <template>
   <section class="container">
-    <label for="toggle" class="toggle">
-      <input type="checkbox" name="toggle" id="toggle" class="toggle__input" />
-      <div class="toggle__track">
-        <span class="toggle__ball">
-          <img :src="moonIcon" alt="checkbox" draggable="false" />
-        </span>
-      </div>
-    </label>
+    <div class="theme-switcher">
+      <label for="toggle" class="toggle">
+        <input
+          type="checkbox"
+          name="toggle"
+          id="toggle"
+          class="toggle__input"
+        />
+        <div class="toggle__track">
+          <span class="toggle__ball">
+            <img :src="sunIcon" alt="sun icon" id="sun" draggable="false" />
+            <img :src="moonIcon" alt="moon icon" id="moon" draggable="false" />
+          </span>
+        </div>
+      </label>
+    </div>
   </section>
 </template>
 
@@ -30,20 +38,32 @@
 
   @layer components {
     .container {
-      position: relative;
+      display: flex;
+      justify-content: center;
       height: 100%;
+    }
+
+    .theme-switcher {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
       background-image: url("@/assets/images/challenge21/background.png");
       background-position: top 50% left 30%;
       background-repeat: no-repeat;
 
       transition: background-position 0.5s ease-in-out;
+
+      &:has(.toggle__input:checked) {
+        background-position: top 50% right 30%;
+      }
     }
 
     .toggle {
       cursor: pointer;
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 10px;
+      left: 10px;
 
       // To hide checkbox
       &__input {
@@ -83,6 +103,8 @@
         background-color: $circle-day;
 
         img {
+          position: absolute;
+          // display: none;
           width: 70%;
           object-fit: cover;
           opacity: 0;
@@ -91,6 +113,15 @@
           -webkit-user-select: none; /* Safari */
           -ms-user-select: none; /* IE 10 and IE 11 */
           user-select: none; /* Standard syntax */
+        }
+
+        #sun {
+          opacity: 1;
+          transition-delay: calc($speed / 2);
+        }
+
+        #moon {
+          transition-delay: 0s;
         }
       }
 
@@ -101,16 +132,48 @@
           background-color: $circle-night;
           transform: translate($track-width - $track-height, -50%);
 
-          img {
+          #moon {
             opacity: 1;
+            transition-delay: calc($speed / 2);
+          }
+
+          #sun {
+            opacity: 0;
+            transition-delay: 0s;
           }
         }
       }
     }
 
     @media (min-width: 640px) {
+      .theme-switcher {
+        background-position: top 50% left 25%;
+
+        &:has(.toggle__input:checked) {
+          background-position: top 50% right 25%;
+        }
+      }
+    }
+
+    @media (min-width: 1024px) {
       .container {
-        // background-position: top 50% right 30%;
+        padding: 20px;
+      }
+
+      .theme-switcher {
+        width: min(1200px, 90%);
+
+        border-radius: 30px;
+        background-position: top 50% left 0%;
+
+        &:has(.toggle__input:checked) {
+          background-position: top 50% right 0%;
+        }
+      }
+
+      .toggle {
+        top: 15px;
+        left: 15px;
       }
     }
   }
