@@ -16,10 +16,11 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       align-items: center;
-      gap: 1rem 1.5rem;
+      gap: 1.5rem 2rem;
 
       height: 100%;
       padding: 0 30px;
+      padding-bottom: 2rem;
     }
 
     @media (min-width: 1024px) {
