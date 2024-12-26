@@ -18,6 +18,7 @@ import bracketsThumb from "../assets/images/thumbnails/challenge17-screen.jpg";
 import skeletonThumb from "../assets/images/thumbnails/challenge18-screen.jpg";
 import newsLayoutThumb from "../assets/images/thumbnails/challenge19-screen.jpg";
 import frostedThumb from "../assets/images/thumbnails/challenge20-screen.jpg";
+import themeThumb from "../assets/images/challenge21/background.png";
 
 export const pageLinks = [
   {
@@ -139,5 +140,11 @@ export const pageLinks = [
     number: 20,
     title: "20 - Frosted Glass Effect",
     thumbnail: frostedThumb,
+  },
+  {
+    path: "/challenge21",
+    number: 21,
+    title: "21 - Theme Switcher",
+    thumbnail: themeThumb,
   },
 ];
