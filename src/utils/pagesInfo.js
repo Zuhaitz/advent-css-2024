@@ -147,4 +147,10 @@ export const pageLinks = [
     title: "21 - Theme Switcher",
     thumbnail: themeThumb,
   },
+  {
+    path: "/challenge22",
+    number: 22,
+    title: "22 - Equal Column Layout",
+    thumbnail: themeThumb,
+  },
 ];
