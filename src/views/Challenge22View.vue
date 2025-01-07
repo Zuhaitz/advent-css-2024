@@ -14,7 +14,9 @@
           alt="Made in Dutch Oven"
         />
         <h1>Made in Dutch Oven</h1>
-        <a href="#">Check Price on Made In</a>
+        <div>
+          <a href="#">Check Price on Made In</a>
+        </div>
         <p>
           The Made In blew us away with its nonstick qualities, heat
           distribution, and moisture retention. Plus it's available in several
@@ -46,8 +48,10 @@
           Le Creuset Enameled Cast Iron Signature Round Dutch Oven, 5.5 qt.,
           Marseille
         </h1>
-        <a href="#">Check Price on Amazon</a>
-        <a href="#">Check Price on Walmart</a>
+        <div>
+          <a href="#">Check Price on Amazon</a>
+          <a href="#">Check Price on Walmart</a>
+        </div>
         <p>
           TA long-time favorite, Le Creuset's Dutch oven does not disappoint.
           Note that the slightly larger size means it needs a bit more space
@@ -76,8 +80,10 @@
           alt="Lodge Enameled Cast Iron 6-Quart Dutch Oven"
         />
         <h1>Lodge Enameled Cast Iron 6-Quart Dutch Oven</h1>
-        <a href="#">Check Price on Amazon</a>
-        <a href="#">Check Price on Target</a>
+        <div>
+          <a href="#">Check Price on Amazon</a>
+          <a href="#">Check Price on Target</a>
+        </div>
         <p>
           This Dutch oven cooks as well as any high-end version and is a great
           buy in any color, as long as you don't mind it's slightly narrow
@@ -106,7 +112,9 @@
           alt="HexClad 5-Quart Dutch Oven"
         />
         <h1>HexClad 5-Quart Dutch Oven</h1>
-        <a href="#">Check Price on Amazon</a>
+        <div>
+          <a href="#">Check Price on Amazon</a>
+        </div>
         <p>
           This stainless steel Dutch oven is lightweight and excels at browning
           and baking bread. However, its lightweight build means cooking results
@@ -136,7 +144,9 @@
           alt="Staub Cast Iron 5.5-Quart Round Cocotte"
         />
         <h1>Staub Cast Iron 5.5-Quart Round Cocotte</h1>
-        <a href="#">Check Price on Amazon</a>
+        <div>
+          <a href="#">Check Price on Amazon</a>
+        </div>
         <p>
           Highly rated and a pro with any cooking task you throw at it, the
           Staub Cast Iron Dutch oven is well worth its price...and weight.
@@ -171,28 +181,25 @@
     }
 
     .list-products {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
       width: 100%;
       padding: 30px 0;
 
       color: black;
       background-color: white;
-      overflow: hidden;
     }
 
     .products {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      // display: grid;
-      // grid-template-rows: subgrid;
-      // grid-row: span 9;
-      // row-gap: 0;
+      place-self: center;
+
+      display: grid;
+      grid-template-rows: subgrid;
+      grid-row: span 10;
+      row-gap: 1rem;
 
       max-width: 300px;
-      padding: 12px;
+      padding: 24px 12px;
 
       border: 2px solid $gray-border;
 
@@ -228,18 +235,25 @@
         line-height: 32px;
       }
 
-      > a {
-        width: 100%;
-        padding: 18px 0;
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
 
-        text-align: center;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 27px;
+        a {
+          width: 100%;
+          // height: fit-content;
+          padding: 18px 0;
 
-        border-radius: 12px;
-        background-color: $red-minus;
+          text-align: center;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 27px;
+
+          border-radius: 12px;
+          background-color: $red-minus;
+        }
       }
 
       p {
