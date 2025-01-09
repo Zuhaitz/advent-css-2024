@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <h1 class="page-title">24 - Stacked Cards</h1>
     <div class="card-stack">
       <div class="card-stack__images">
         <img

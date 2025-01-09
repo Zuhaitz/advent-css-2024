@@ -19,8 +19,8 @@
       font-weight: bold;
       text-align: center;
 
-      width: 100%;
-      max-width: min(80%, 1000px);
+      width: min(80%, 1000px);
+      height: fit-content;
 
       background: linear-gradient(
         transparent 0%,
