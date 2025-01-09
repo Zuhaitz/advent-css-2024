@@ -18,7 +18,7 @@
 
 <style lang="scss" scoped>
   $card-height: 320px;
-  $margin: 50px;
+  $margin: 0px;
 
   @layer components {
     .container {
@@ -64,6 +64,7 @@
 
           scroll-snap-align: center;
           scroll-snap-stop: always;
+          scroll-margin: -5px;
 
           view-timeline: --throw;
 
@@ -86,7 +87,7 @@
 
     @keyframes throw-animation {
       from {
-        // transform: rotate(-30deg);
+        transform: rotate(-30deg);
         opacity: 0;
       }
       to {
