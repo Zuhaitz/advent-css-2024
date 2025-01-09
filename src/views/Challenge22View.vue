@@ -171,6 +171,7 @@
   $gray-border: #d6d6d6;
   $red-minus: #ef7b69;
   $navy-blue: #090d3d;
+  $light-blue: #57c5fa;
 
   @layer components {
     .container {
@@ -182,7 +183,9 @@
 
     .list-products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+      grid-template-columns: repeat(auto-fit, 300px);
+      column-gap: 0;
+      justify-content: center;
       width: 100%;
       padding: 30px 0;
 
@@ -191,12 +194,13 @@
     }
 
     .products {
+      position: relative;
       place-self: center;
 
       display: grid;
       grid-template-rows: subgrid;
       grid-row: span 10;
-      row-gap: 1rem;
+      row-gap: 1.5rem;
 
       max-width: 300px;
       padding: 24px 12px;
@@ -205,6 +209,10 @@
 
       counter-increment: item;
       margin-bottom: 5px;
+
+      &:hover {
+        border-color: $red-minus;
+      }
 
       &:before {
         content: counter(item);
@@ -222,7 +230,20 @@
         background-color: $navy-blue;
       }
 
+      &::after {
+        content: url("../assets/images/challenge22/check--large.svg");
+        position: absolute;
+        top: anchor(--photo start);
+        left: anchor(--photo start);
+
+        width: 72px;
+        height: 72px;
+
+        background-color: $light-blue;
+      }
+
       img {
+        anchor-name: --photo;
         width: 100%;
         height: auto;
         object-fit: contain;

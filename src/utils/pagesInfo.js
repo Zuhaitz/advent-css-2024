@@ -19,6 +19,7 @@ import skeletonThumb from "../assets/images/thumbnails/challenge18-screen.jpg";
 import newsLayoutThumb from "../assets/images/thumbnails/challenge19-screen.jpg";
 import frostedThumb from "../assets/images/thumbnails/challenge20-screen.jpg";
 import themeThumb from "../assets/images/challenge21/background.png";
+import columnThumb from "../assets/images/thumbnails/challenge22-screen.jpg";
 
 export const pageLinks = [
   {
@@ -151,6 +152,6 @@ export const pageLinks = [
     path: "/challenge22",
     number: 22,
     title: "22 - Equal Column Layout",
-    thumbnail: themeThumb,
+    thumbnail: columnThumb,
   },
 ];
