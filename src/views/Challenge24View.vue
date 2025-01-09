@@ -18,7 +18,6 @@
 
 <style lang="scss" scoped>
   $card-height: 320px;
-  $margin: 0px;
 
   @layer components {
     .container {
@@ -29,18 +28,16 @@
 
     .card-stack {
       width: 100%;
-      height: calc($card-height + $margin * 2);
+      height: $card-height;
       timeline-scope: --scroll-timeline;
 
       &__images {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: $margin;
 
         height: 100%;
         width: 100%;
-        padding-bottom: $margin;
 
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
@@ -57,7 +54,7 @@
 
         img {
           position: sticky;
-          top: $margin;
+          top: 0;
           height: $card-height;
           width: auto;
           object-fit: contain;
@@ -87,11 +84,35 @@
 
     @keyframes throw-animation {
       from {
-        transform: rotate(-30deg);
+        // transform: rotateZ(-30deg);
         opacity: 0;
       }
       to {
         opacity: 1;
+      }
+    }
+
+    @media (min-width: 640px) {
+      $card-height: 480px;
+
+      .card-stack {
+        height: $card-height;
+
+        &__images > img {
+          height: $card-height;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      $card-height: 700px;
+
+      .card-stack {
+        height: $card-height;
+
+        &__images > img {
+          height: $card-height;
+        }
       }
     }
   }
