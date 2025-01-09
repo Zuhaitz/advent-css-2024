@@ -1,0 +1,1 @@
+import{_ as s,c as n,b as e,o}from"./index-BcY7ooWg.js";const a={},c={class:"container"};function r(l,t){return o(),n("section",c,t[0]||(t[0]=[e("h1",{class:"page-title"},"9 - Button with a Gradient Border",-1),e("button",{class:"gradient-button"},[e("span",null,"CSS Rocks!")],-1)]))}const _=s(a,[["render",r],["__scopeId","data-v-13f41006"]]);export{_ as default};
