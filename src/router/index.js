@@ -369,6 +369,18 @@ const router = createRouter({
             ...challengesAnim,
           },
         },
+        {
+          path: "/challenge24",
+          name: "challenge24",
+          component: () => import("../views/Challenge24View.vue"),
+          meta: {
+            previous: {
+              path: "/challenge23",
+              title: "23 - Animated Hamburger Menu",
+            },
+            ...challengesAnim,
+          },
+        },
       ],
     },
     {

@@ -21,6 +21,7 @@ import frostedThumb from "../assets/images/thumbnails/challenge20-screen.jpg";
 import themeThumb from "../assets/images/challenge21/background.png";
 import columnThumb from "../assets/images/thumbnails/challenge22-screen.jpg";
 import burgerThumb from "../assets/images/thumbnails/challenge23-screen.jpg";
+import cardThumb from "../assets/images/thumbnails/challenge24-screen.jpg";
 
 export const pageLinks = [
   {
@@ -160,5 +161,11 @@ export const pageLinks = [
     number: 23,
     title: "23 - Animated Hamburger Menu",
     thumbnail: burgerThumb,
+  },
+  {
+    path: "/challenge24",
+    number: 24,
+    title: "24 - Stacked Cards",
+    thumbnail: cardThumb,
   },
 ];
